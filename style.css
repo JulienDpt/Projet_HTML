@@ -11,6 +11,13 @@ h1
 	color: #1E90FF;
 }
 
+ul
+{
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
 .header
 {
 	z-index: 1;
@@ -60,13 +67,11 @@ h1
 .discussion::-webkit-scrollbar-track
 {
 	border-radius: 10px;
-	background-color: #fff;
 }
 
 .discussion::-webkit-scrollbar
 {
-	width: 10px;
-
+	width: 5px;
 }
 
 .discussion::-webkit-scrollbar-thumb
@@ -75,7 +80,7 @@ h1
 	background-color: #bdc3c7;
 }
 
-.discussion:hover .discussion::-webkit-scrollbar-thumb:hover
+.discussion::-webkit-scrollbar-thumb:hover
 {
 	background-color: #1E90FF;
 }
@@ -92,7 +97,7 @@ h1
 {
 	height: 100px;
 	border-bottom: 1px solid #bdc3c7;
-	margin-right: 0;	
+	margin-right: 0;
 }
 
 .freenote
@@ -103,6 +108,16 @@ h1
 
 }
 
+.welcome
+{
+	margin-top: 40%;
+}
+
+.welcome h1
+{
+	font-size: 40px;	
+}
+
 .profil
 {
 	flex: 1;
@@ -110,21 +125,32 @@ h1
 
 }
 
-.connexion
+.connexion, .inscription, .deconnexion
 {  
-  float: center;	
-  background-color: #1E90FF;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 80%;
-  opacity: 0.9;
-  border-radius: 10px;
+	background-color: #1E90FF;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 80%;
+	opacity: 0.9;
 }
 
-.connexion:hover
+.deconnexion
+{
+	background-color: #cd201f;
+	margin-top: 500px;
+}
+
+.connexion:hover, .inscription:hover, .deconnexion:hover
 {
 	opacity: 2;
+}
+
+.info
+{
+	text-align: center;
+	padding-left: 0;
+	margin-top: 50%;
 }

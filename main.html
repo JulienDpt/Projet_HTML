@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
 		<title>Main</title>
 	</head>
 
@@ -38,28 +39,87 @@
 			</div>
 
 			<div class="freenote">
-				<div class="welcome">
-					<h1>Bienvenue sur FreeNote!</h1>
-				</div>
+	<div class='chatbox'>
+
+		<div class='chatlogs'>
+			<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Je suis</p>	
+			</div>
+			<div class='chat moi'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Julien Dupont</p>
+			</div>
+			<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>J'aime le</p>	
+			</div>
+			<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Fromage et</p>	
+			</div>
+			<div class='chat moi'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Les lasagnes</p>
+			</div>
+			<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Mais pas</p>	
+			</div>
+				<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Le couscous </p>	
+			</div>
+			<div class='chat moi'>
+				<div class='user-photo'></div>
+				<p class='chat-message'> En effet</p>
+			</div>
+			<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Lorem ipsum</p>	
+			</div>
+			<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Je suis</p>	
+			</div>
+			<div class='chat moi'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Pas ouf</p>
+			</div>
+			<div class='chat friend'>
+				<div class='user-photo'></div>
+				<p class='chat-message'>Lorem ipsum</p>	
 			</div>
 
-			<div class="profil">
+
+		</div>
+
+		<div class='chat-form'>
+			<textarea></textarea>
+			<button>Envoyer</button>
+		</div>
+
+	</div>
+
+			</div>
+
+			<nav class="profil">
 				<div class="button">
 					<button class="connexion" name="button" type="submit">Se connecter</button>
 					<button class="inscription" name="button" type="submit">S'inscrire</button>
 				</div>
 				<div class="info">
 					<ul>
-						<li>Pseudo</li><br>
-						<li>E-mail</li>
+						<li><a href='index.php?page=conversation'>Message</a></li>
+						<li><a href='index.php?page=profils'>Mon profil</a></li>
 					</ul>
 				</div>
 
-				<div class="button">
-					<button class="deconnexion" name="button" type="submit">Se déconnecter</button>
-				</div>
+				<form class="button">
+					<button class="deconnexion" name="button" type="submit" action='index.php?page=signout'>Se déconnecter</button>
+				</form>
 
-			</div>
+			</nav>
 		</div>
 
 	</body>
